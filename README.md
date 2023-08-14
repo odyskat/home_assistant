@@ -1,2 +1,2 @@
 # home_assistant
-Personal configuration.
+Personal configuration of home assistant os. Its primary aim is sensor data collecting, visualization, and notifications (mobile) when a parameter is met (e.g. high-temperature reading). It works almost in real-time (collects reading in a set time interval of 1 min by default but can be configured as low as 1 sec without sensor malfunction). Utilizes home assistant mobile app to provide access to data and more importantly push notifications.
