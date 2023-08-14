@@ -1,0 +1,10 @@
+Filepaths (native) on linux mac --> /bin/whatever/folder/file.something
+
+Filepaths used in sqlite and jinja2 --> same as above
+
+
+Filepaths (native) on windows --> C:\Users\something\file.something
+
+Filepaths used in sqlite and jinja2 --> C:/Users/something/file.something 
+
+All backslases are changed to frontslashes!!!

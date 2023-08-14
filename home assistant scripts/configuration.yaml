@@ -1,0 +1,62 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.30.33.0/24
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# influxdb:
+#   host: a0d7b954-influxdb
+#   port: 8086
+#   database: test
+#   username: test
+#   password: test
+#   max_retries: 3
+#   default_measurement: state
+
+#shell_command:
+
+  #export_try: /config/my_scripts/eportscript.sh
+
+#  connect_ha_contaner: bash /config/my_scripts/connect_ha_container.sh
+
+#  open_sqlite: bash /config/myscripts/open_sql.sh
+
+#  headers_on: bash /config/my_scripts/headers_on.sh
+
+#  mode_on: bash /config/my_scripts/mode_on.sh
+
+#  file_write: bash /config/my_scripts/html_file_write.sh
+
+#  select_query: bash /config/my_scripts/select_query.sh
+
+shell_command:
+  script1: "python3 /config/python_scripts/script1.py"
+
+#try command sensor to obtain data from pyhton_sqlite
+# sensor:
+#   - platform: command_line
+#     command: python3 -c "import requests; print(requests.get('https://pypi.python.org/pypi/homeassistant/json').json()['info']['version'])"
+#     name: HA release
+
+sensor :
+  - platform: command_line
+    command: "python3 /config/script10.py"
+    name: Humidity_sensor1_7am
+    unit_of_measurement: "%RH"
+    unique_id: sql.python.sensor
+    scan_interval: 15
+# sensor:
+#    - platform: command_line
+#     name: Sensor1
+#     command: "python3 /config/sensor1.py"
