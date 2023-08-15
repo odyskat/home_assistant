@@ -3,6 +3,10 @@ Personal configuration of home assistant os. Its primary aim is sensor data coll
 
 Features a custom-made html document embedded in an iframe window in the dashboard, containing mainly a table with temperature measurements at specific times throughout the day. This is useful in cafes, restaurants, or any fridge-storing application where the state (or private stakeholder) will carry over quality controls. Usually, a printed report is required.
 
+Sensors (shtc3 from dfrobot or adafruit) were programed through esphome, and the configuration (.yaml) files are included in "home assistant scripts/Sensors_esphome_configuration".
+
+Hardware and connections in "fritz files/hardware and connections.md"
+
 ![Screenshot 2023-08-14 205307](https://github.com/odyskat/home_assistant/assets/114591654/661e9a82-92ee-49b1-93b8-bc200c6c550c)
 
 ![Screenshot 2023-08-14 205332](https://github.com/odyskat/home_assistant/assets/114591654/f6442e1b-4d15-4f52-b220-0d8dd6674501)
